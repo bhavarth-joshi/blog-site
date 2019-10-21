@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+	<head>
+	
+		<title>New Blog</title>
+
+		<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+		<meta name="author" content="The Man in Blue" />
+		<meta name="robots" content="all" />
+		<meta name="MSSmartTagsPreventParsing" content="true" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" type="text/css" href="css/home.css">
+		<link rel="stylesheet" type="text/css" href="css/blog.css">
+		<link rel="stylesheet" type="text/css" href="css/widgEditor.css">
+			
+		<script type="text/javascript" src="scripts/widgEditor.js"></script>
+
+	</head>
+
+	<body>
+
+		<div class="navbar">
+			<a href="home.html">Blogpost</a>			
+			<a href="blog.html" class="right">Profile</a>
+			<a href="new.html" class="right">New Blog</a>
+		</div>				  
+
+		<div id="content" class="main">
+			<form action="submit.php" onsubmit="alert('Your submitted HTML was:\n\n' + document.getElementById('noise').value); return false;">
+				<label for="title"><b>Title:</b></label><br>
+				<input type="text" placeholder="Enter Title" name="title" required>
+				<div>
+					<textarea id="noise" name="noise" class="widgEditor nothing"></textarea>
+				</div>
+				<button type="submit">Upload</button>
+			</form>
+		</div>
+
+		<div class="footer">
+			<h5>Made by Blogpost | email: blogpost@info.com </h5>
+		</div>
+		
+	</body>
+
+</html>
