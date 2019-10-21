@@ -6,4 +6,6 @@ updates
   
 	signup  
   
-	user blog 
+	user profile
+	
+	new blog text-editor
